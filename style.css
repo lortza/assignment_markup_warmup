@@ -9,5 +9,22 @@
 }
 
 
-h1 {color: var(--blue);}
+nav {
+  background-color: var(--yellow);
+}
 
+#sidebar {
+  background-color: var(--pink);
+}
+
+header {
+  background-color: var(--green);
+}
+
+.posts article {
+  background-color: var(--teal);
+}
+
+footer {
+  background-color: var(--blue);
+}
