@@ -66,7 +66,7 @@ header .author {
 .posts article {
   background-color: var(--teal);
   padding: 2%;
-  margin: 10px;
+  margin: 1%;
 }
 
 .posts h1 {
@@ -92,6 +92,7 @@ footer {
   background-color: var(--blue);
   padding: 2%;
   width: 100%;
+  clear: left;
 }
 
 /* ----------------------------------- *
@@ -102,6 +103,24 @@ footer {
 @media (max-width: 989px) {
   .container {
     max-width: 989px;
+  }
+
+  aside#sidebar {
+    display: none;
+  }
+
+  header {
+    border-radius: 0;
+  }
+
+  .posts article {
+    width: 48%;
+    float: left;
+  }
+
+  .posts article:nth-child(3) {
+    clear: left;
+    width: 100%;
   }
 
 }/* narrow */
@@ -138,7 +157,6 @@ footer {
   }
 
   footer {
-    clear: left;
     border-radius: 20px;
   }
 
