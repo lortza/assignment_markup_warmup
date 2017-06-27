@@ -8,9 +8,13 @@
   --blue: #9FC5F8;
 }
 
+/* Main Styles */
+
+body {box-sizing: border-box;}
 
 nav {
   background-color: var(--yellow);
+  display: block;
 }
 
 #sidebar {
@@ -27,4 +31,20 @@ header {
 
 footer {
   background-color: var(--blue);
+}
+
+/* ----------------------------------- *
+ *           MEDIA QUERIES
+ * ----------------------------------- */
+
+/* Narrow Screen */
+@media (max-width: 989px) {
+  
+
+}
+
+/* Wide Screen */
+@media (min-width: 990px) {
+  
+
 }
