@@ -24,6 +24,8 @@ nav, #sidebar, header, .posts article, footer {
 nav {
   background-color: var(--yellow);
   display: block;
+  font-size: 1.2em;
+  padding: 1%;
 }
 
 #sidebar {
@@ -42,28 +44,74 @@ nav {
 
 header {
   background-color: var(--green);
+  text-align: center;
+  padding: 2%;
+}
+
+header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header .author {
+  font-style: italic;
 }
 
 .posts article {
   background-color: var(--teal);
+  padding: 2%;
+}
+
+.posts h1 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.posts .date {
+  text-align: center;
+  font-style: 1em;
+  font-style: italic;
+  margin: 0.25em 0 1em 0;
+}
+
+.posts h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em 0;
 }
 
 footer {
   background-color: var(--blue);
+  padding: 2%;
+  width: 100%;
 }
 
 /* ----------------------------------- *
  *           MEDIA QUERIES
  * ----------------------------------- */
 
-/* Narrow Screen */
+/* NARROW SCREEN */
 @media (max-width: 989px) {
   
 
-}
+}/* narrow */
 
-/* Wide Screen */
+/* WIDE SCREEN */
 @media (min-width: 990px) {
-  
 
-}
+  #sidebar {
+    width: 220px;
+    height: 430px;
+  }
+
+  header {
+    /*height: 85px;*/
+    /*width: 100%;*/
+  }
+
+  .posts article {
+    width: 230px;
+  }
+
+}/* wide */
