@@ -28,6 +28,10 @@ nav {
   padding: 1%;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 #sidebar {
   background-color: var(--pink);
   padding: 1%;
@@ -46,6 +50,8 @@ header {
   background-color: var(--green);
   text-align: center;
   padding: 2%;
+  border-radius: 20px;
+  width: 100%;
 }
 
 header h1 {
@@ -60,6 +66,7 @@ header .author {
 .posts article {
   background-color: var(--teal);
   padding: 2%;
+  margin: 10px;
 }
 
 .posts h1 {
@@ -93,25 +100,46 @@ footer {
 
 /* NARROW SCREEN */
 @media (max-width: 989px) {
-  
+  .container {
+    max-width: 989px;
+  }
 
 }/* narrow */
 
 /* WIDE SCREEN */
 @media (min-width: 990px) {
 
-  #sidebar {
-    width: 220px;
-    height: 430px;
+  .container {
+    max-width: 990px;
   }
 
-  header {
-    /*height: 85px;*/
-    /*width: 100%;*/
+  #sidebar {
+    width: 25%;
+    height: 430px;
+    float: left;
+    margin: 10px;
+  }
+
+  main {
+    width: 70%;
+    float: left;
+    margin: 10px 0;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .posts article {
-    width: 230px;
+    width: 33%;
+    /*float: left;*/
+  }
+
+  footer {
+    clear: left;
+    border-radius: 20px;
   }
 
 }/* wide */
