@@ -10,7 +10,12 @@
 
 /* Main Styles */
 
-body {box-sizing: border-box;}
+body {font-family: 'Quicksand', sans-serif;}
+
+p {
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+}
 
 nav, #sidebar, header, .posts article, footer {
   border: 2px solid black;
