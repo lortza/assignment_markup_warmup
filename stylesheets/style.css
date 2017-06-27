@@ -12,6 +12,10 @@
 
 body {box-sizing: border-box;}
 
+nav, #sidebar, header, .posts article, footer {
+  border: 2px solid black;
+}
+
 nav {
   background-color: var(--yellow);
   display: block;
