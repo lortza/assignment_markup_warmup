@@ -19,6 +19,16 @@ nav {
 
 #sidebar {
   background-color: var(--pink);
+  padding: 1%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sidebar .ad img {
+  width: 100%;
 }
 
 header {
