@@ -1,0 +1,13 @@
+/* Theme Colors */
+
+:root {
+  --red: #EA2E49;
+  --blue: #77C4D3;
+  --yellow: #E9F198;
+  --gray: #3A4453;
+  --green: #DAEDE2;
+}
+
+
+h1 {color: var(--blue);}
+
